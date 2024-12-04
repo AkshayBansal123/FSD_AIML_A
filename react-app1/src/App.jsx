@@ -2,6 +2,7 @@ import { Route } from "react-router-dom"
 import {Routes} from 'react-router-dom'
 import Home from './components/Home'
 import Counter from "./components/Counter"
+import Stopwatch  from "./components/Stopwatch"
 const App=()=>{
   return(
     <div>
@@ -10,7 +11,7 @@ const App=()=>{
     }> </Route>
     <Route path="/counter" element={<Counter/>
     }> </Route>
-    <Route path="/stopwatch" element={<h1>Stopwatch page</h1>
+    <Route path="/stopwatch" element={<Stopwatch/>
     }> </Route>
     <Route path="/nopage" element={<h1>No page available</h1>
     }> </Route>
