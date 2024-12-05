@@ -3,6 +3,7 @@ import {Routes} from 'react-router-dom'
 import Home from './components/Home'
 import Counter from "./components/Counter"
 import Stopwatch  from "./components/Stopwatch"
+import Refx from './components/Refx'
 const App=()=>{
   return(
     <div>
@@ -13,6 +14,7 @@ const App=()=>{
     }> </Route>
     <Route path="/stopwatch" element={<Stopwatch/>
     }> </Route>
+    <Route path="/refx" element={<Refx/>}></Route>
     <Route path="/nopage" element={<h1>No page available</h1>
     }> </Route>
   </Routes>

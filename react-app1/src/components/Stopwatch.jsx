@@ -18,7 +18,10 @@ const Stopwatch = () => {
       const rem=(time%3600);
       const minutes=Math.floor(rem/60)
       const seconds=rem%60;
-      return `${hours}:${minutes}:${seconds}`
+      const formattedTime = `${hours.toString().padStart(2, "0")}:${minutes
+        .toString()
+        .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+      return formattedTime
     }
     useEffect(()=>{
       if(isRunning)
