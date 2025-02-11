@@ -1,13 +1,33 @@
+
 const fs=require("node:fs");
-try{
-    const data=fs.readFileSync("dummy.txt");
-    if(err)
-    {
-        throw err;
+function myReadFile(){
+    try{
+        const data=fs.readFileSync("dummy.txt","utf-8");
+         if(data)
+         {
+             console.log("file data",data);
+         }
+         else
+         throw err;
     }
-    console.log("file data",data);
+    catch(err)
+    {
+        console.log(err.message);
+    }
 }
-catch(err)
-{
-    console.log(err.message);
+function myWriteFile(data){
+    try{
+        
+        fs.writeFileSync("dummy.txt",data);
+    }
+    catch(err)
+    {
+        console.log(err.message);
+    } 
 }
+module.exports={myReadFile:myReadFile,
+    myWriteFile:myWriteFile,
+username:"Akshaydilw"}
+// myReadFile();
+// myWriteFile();
+// myReadFile();
