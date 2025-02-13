@@ -27,7 +27,7 @@ function myWriteFile(data){
 }
 module.exports={myReadFile:myReadFile,
     myWriteFile:myWriteFile,
-username:"Akshaydilw"}
+username:"Akshay"}
 // myReadFile();
 // myWriteFile();
 // myReadFile();
